@@ -2,6 +2,7 @@ header {
   display: flex;
   align-items: baseline;
   padding: 20px;
+  margin-bottom: 0px;
 }
 
 h1 {
@@ -17,6 +18,7 @@ h1 {
   display: flex;
   align-items: center;
   text-align: center;
+  
 }
 
 header img {
@@ -24,4 +26,71 @@ header img {
   left: 70%;
   width: 5%;
   height: 5%;
+}
+.image-1{
+    position: relative;
+    right: 10px;
+    bottom: 50px;
+}
+
+.image-2{
+    position: relative;
+    left: 35%;  
+    bottom: 50px;
+}
+
+.image-3{
+    position: relative;
+    left: 31%;  
+    bottom: 50px;
+}
+
+.image-4{
+    position: relative;
+    left: 60%; 
+    bottom: 50px; 
+}
+
+.image-5{
+    position: relative;
+    left: 45%;  
+    top: 10px;
+}
+h3{
+    color: #172b4d;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 10px;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  display: flex;
+  align-items: center;
+  text-align: left;
+  margin: 5px;
+}
+p{
+    color: #344563;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-size: 14px;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    display: flex;
+    align-items: center;
+    text-align: left;
+}
+h4{
+    color: #7F8CFF;
+    font-family: 'Poppins';
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+margin: 5px;
+}
+.social img{
+    margin-right: 10px;
 }
