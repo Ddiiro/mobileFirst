@@ -1,11 +1,11 @@
-nav {
+.header {
   display: flex;
   align-items: baseline;
   padding: 20px 20px 0 20px;
   margin-bottom: 0;
 }
 
-header {
+.logo {
   color: #6070ff;
   font-family: 'Poppins', sans-serif;
   font-style: normal;
@@ -18,13 +18,14 @@ header {
   display: flex;
   align-items: center;
   text-align: center;
+  text-decoration: none;
 }
 
-nav img {
+.nav {
   position: relative;
-  left: 70%;
-  width: 5%;
-  height: 5%;
+  left: 28vh;
+  width: 20%;
+  height: 20%;
 }
 
 main {
@@ -75,7 +76,16 @@ p {
   line-height: 24px;
 }
 
-.social img {
-  margin-right: 10px;
+ul {
+  display: flex;
+  justify-content: start;
+  list-style: none;
+  position: relative;
+  right: 32px;
+  align-items: baseline;
+}
+
+ul li {
+  margin-right: 20px;
   padding-bottom: 10vh;
 }
