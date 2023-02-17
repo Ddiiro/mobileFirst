@@ -129,6 +129,17 @@ ul li {
   line-height: 44px;
   color: #172b4d;
 }
+.multi{
+  width: 295px;
+  height: 70px;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 35px;
+  margin: 0;
+  line-height: 44px;
+  color: #172b4d;
+}
 
 .container {
   display: flex;
@@ -225,6 +236,39 @@ ul li {
   display: flex;
   align-items: center;
   text-align: center;
+  letter-spacing: 0.03em;
+  color: #396df2;
+  text-decoration: none;
+}
+
+.about {
+  margin-top: 40px;
+}
+
+.about-social li {
+  margin-right: 20px;
+}
+
+.about-button {
+    /* display: flex; */
+    /* flex-direction: row; */
+    align-items: center; 
+    padding: 10px;
+    position: relative;
+    bottom: 10vh;
+    width: 150px;
+    border: 1px solid #6070ff;
+    border-radius: 8px;
+  }
+
+.about-button a {
+  width: 100px;
+  height: 30px;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 24px;
   letter-spacing: 0.03em;
   color: #396df2;
   text-decoration: none;
