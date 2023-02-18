@@ -91,7 +91,7 @@ ul li {
 }
 
 .grid-item {
-  margin-top: 20px 20px;
+  margin: 20px 0 0 10px;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
@@ -361,26 +361,39 @@ button a:hover {
 
 .basic {
   display: flex;
+  width: 80%;
   flex-direction: column;
-  background: #f7f7f9;
   border-radius: 8px;
   align-items: baseline;
   position: relative;
   bottom: 70px;
 }
 
-.basic li {
-  height: 10px;
-  top: calc(50% - 24px / 2 - 0.36px);
+.stack {
+  width: 100%;
+  height: 20px;
+  padding: 16px;
+  background: #f7f7f9;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+}
+
+.stack p {
+  position: relative;
+  padding-left: 20px;
+  top: 5px;
+}
+
+.lang-skills p {
   font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 500;
-  font-size: 15px;
-  line-height: 5px;
-  display: flex;
-  align-items: baseline;
-  width: 50%;
-  color: #253858;
+  font-size: 20px;
+  line-height: 24px;
+  position: relative;
+  bottom: 80px;
 }
 
 .contact p {
@@ -395,16 +408,6 @@ button a:hover {
   line-height: 28px;
   text-align: center;
   color: #ebebff;
-}
-
-.lang-skills p {
-  font-family: 'Poppins', sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 24px;
-  position: relative;
-  bottom: 80px;
 }
 
 .basic li p {
@@ -428,13 +431,13 @@ button a:hover {
   margin-left: auto;
   position: relative;
   bottom: 120px;
-  left: 35vh;
+  left: 55vh;
 }
 
 .skills {
   position: relative;
   top: 10vh;
-  right: 18vh;
+  right: 29vh;
 }
 
 .contact {
@@ -446,8 +449,9 @@ button a:hover {
   background-size: auto 757px;
   border-radius: 100px 0% 0% 0%;
   padding: 20px;
-  height: 779px;
-  margin-top: 10px;
+  height: 770px;
+  position: relative;
+  bottom: 15vh;
 }
 
 .contact-background {
@@ -460,7 +464,7 @@ button a:hover {
   position: relative;
   width: 801px;
   height: 56px;
-  left: 10%;
+  left: 5%;
   top: 30px;
   font-family: 'Poppins', sans-serif;
   font-style: normal;
@@ -475,7 +479,7 @@ button a:hover {
 
 .contact input {
   position: relative;
-  width: 100%;
+  width: 90%;
   height: 48px;
   left: 0;
   right: 0;
@@ -499,7 +503,7 @@ button a:hover {
 .contact textarea {
   position: relative;
   top: 120px;
-  width: 100%;
+  width: 90%;
   height: 170px;
   border-radius: 8px;
   font-family: 'Poppins', sans-serif;
@@ -513,7 +517,7 @@ button a:hover {
 
 .shape {
   position: relative;
-  bottom: 22vh;
+  bottom: 34vh;
   width: 327px;
   height: 1px;
   background: #dfe1e6;
@@ -522,7 +526,7 @@ button a:hover {
 
 .shape-1 {
   position: relative;
-  bottom: 13vh;
+  bottom: 25vh;
   width: 327px;
   height: 1px;
   background: #dfe1e6;
