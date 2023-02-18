@@ -132,7 +132,7 @@ ul li {
 
 .multi {
   width: 295px;
-  height: 70px;
+  height: 40px;
   font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -145,8 +145,8 @@ ul li {
 .container {
   display: flex;
   flex-direction: row;
-  margin: 0;
-  padding: 0;
+  margin-top: 20px;
+  padding-left: 25px;
   gap: 12px;
   height: 32px;
   width: 80%;
@@ -176,6 +176,12 @@ ul li {
   padding-left: 30px;
 }
 
+.details p {
+  color: #7a869a;
+  font-family: 'Poppins', sans-serif;
+  font-style: bold;
+}
+
 .details img {
   width: 8px;
   height: 8px;
@@ -193,11 +199,18 @@ ul li {
   color: #344563;
 }
 
-.link a {
-  background: #ebebff;
+.link {
+  background-color: #ebebff;
   border-radius: 8px;
+  display: flex;
   width: 29px;
   height: 16px;
+  position: relative;
+  right: 50%;
+  text-decoration: none;
+}
+
+a {
   font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 500;
@@ -205,10 +218,7 @@ ul li {
   line-height: 16px;
   letter-spacing: 0.03em;
   color: #6070ff;
-  position: relative;
-  right: 18%;
   text-decoration: none;
-  margin: 20px;
 }
 
 .button {
@@ -242,6 +252,60 @@ ul li {
   text-decoration: none;
 }
 
+.about-button a {
+  width: 100px;
+  height: 30px;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  color: #396df2;
+  text-decoration: none;
+}
+
+button:hover {
+  background-color: #6070ff;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 12px;
+  gap: 10px;
+  position: relative;
+  width: 124px;
+  height: 48px;
+  right: 30%;
+  top: 0;
+}
+
+.contact-button {
+  align-items: center;
+  padding: 10px;
+  position: relative;
+  top: 140px;
+  width: 150px;
+  border: 1px solid #6070ff;
+  border-radius: 8px;
+}
+
+.contact-button a {
+  width: 100px;
+  height: 30px;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  color: #396df2;
+  text-decoration: none;
+}
+
+button a:hover {
+  color: #fff;
+}
+
 .about {
   margin-top: 40px;
 }
@@ -258,19 +322,6 @@ ul li {
   width: 150px;
   border: 1px solid #6070ff;
   border-radius: 8px;
-}
-
-.about-button a {
-  width: 100px;
-  height: 30px;
-  font-family: 'Poppins', sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 15px;
-  line-height: 24px;
-  letter-spacing: 0.03em;
-  color: #396df2;
-  text-decoration: none;
 }
 
 .lang {
@@ -335,35 +386,44 @@ ul li {
   color: #ebebff;
 }
 
-.basic li p {
-  margin-left: auto;
-  width: 100px;
-  display: flex;
-  justify-content: start;
-  position: relative;
-  bottom: 10px;
-}
-
-.lang-skills {
-  position: relative;
-  display: flex;
-  align-items: baseline;
-  width: 90%;
-  bottom: 70px;
-}
-
-.lang-skills h3 {
+.lang-skills p {
   font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 20px;
   line-height: 24px;
   position: relative;
+  bottom: 80px;
+}
+
+.basic li p {
+  margin-left: auto;
+  width: 100%;
+  display: flex;
+  justify-content: start;
+  position: relative;
+  bottom: 10px;
+}
+
+.lang-skills li {
+  display: inline;
+  align-items: baseline;
+  width: 100%;
 }
 
 .lang-skills img {
-  position: relative;
+  width: 10%;
+  height: 10%;
   margin-left: auto;
+  position: relative;
+  bottom: 120px;
+  left: 35vh;
+}
+
+.skills {
+  position: relative;
+  top: 10vh;
+  right: 18vh;
 }
 
 .contact {
@@ -440,32 +500,18 @@ ul li {
   padding-left: 10px;
 }
 
-.contact-button {
-  align-items: center;
-  padding: 10px;
-  position: relative;
-  top: 140px;
-  width: 150px;
-  border: 1px solid #6070ff;
-  border-radius: 8px;
-}
-
-.contact-button a {
-  width: 100px;
-  height: 30px;
-  font-family: 'Poppins', sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 15px;
-  line-height: 24px;
-  letter-spacing: 0.03em;
-  color: #396df2;
-  text-decoration: none;
-}
-
 .shape {
   position: relative;
-  bottom: 10vh;
+  bottom: 22vh;
+  width: 327px;
+  height: 1px;
+  background: #dfe1e6;
+  border-radius: 10px;
+}
+
+.shape-1 {
+  position: relative;
+  bottom: 13vh;
   width: 327px;
   height: 1px;
   background: #dfe1e6;
