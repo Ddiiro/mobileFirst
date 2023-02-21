@@ -452,6 +452,8 @@ button a:hover {
   height: 770px;
   position: relative;
   bottom: 15vh;
+  display: flex;
+  flex-flow: column wrap;
 }
 
 .contact-background {
@@ -459,10 +461,15 @@ button a:hover {
   left: 30%;
   height: 100vh;
 }
+form{
+  order: 3;
+  position: relative;
+  bottom: 50px;
+}
 
 .contact h2 {
   position: relative;
-  width: 801px;
+  width:100%;
   height: 56px;
   left: 5%;
   top: 30px;
@@ -475,6 +482,7 @@ button a:hover {
   align-items: center;
   text-align: center;
   color: #fff;
+  order: 1;
 }
 
 .contact input {
@@ -485,7 +493,7 @@ button a:hover {
   right: 0;
   top: 100px;
   margin-top: 20px;
-  bottom: 0;
+   bottom: 0; 
   background: #fff;
   border: 1px solid #cfd8dc;
   border-radius: 8px;
@@ -498,6 +506,7 @@ button a:hover {
   align-items: center;
   color: #172b4d;
   padding-left: 10px;
+  order: 3;
 }
 
 .contact textarea {
