@@ -217,6 +217,7 @@
      <div><img class="shape-1" src="Images/Separator Bottom.png" alt=""></div> 
 
 </section>
+<!-- This is the contact page -->
 <section class="contact">
     <h2>Contact Me</h2> 
 <p>
@@ -224,13 +225,14 @@
     a feature that you need built or a project that needs coding.
      I’d love to help with it 
 </p>
-   <input placeholder="Yeremias" type="text">
-   <input placeholder="natajayanj14@gmail.com" type="text">
-   <textarea placeholder="Write your message here" name="" id="" cols="30" rows="10"></textarea>
-
+<form action="https://formspree.io/f/{form_id}" method="post">
+   <input name="Name" placeholder="Yeremias" type="text" maxlength="30" required>
+   <input name="Email" placeholder="natajayanj14@gmail.com" type="email" required>
+   <textarea placeholder="Write your message here" name="Message" id="" cols="30" rows="10" maxlength="500" type="text" required></textarea>
 <button  class="contact-button"><a href="">Get in touch</a></button>
-
+</form>
 <div class=""><img src="Images/Shape.png" alt=""></div>
 </section>
+<!-- the contact page ends here -->
 </body>
 </html>
