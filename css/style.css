@@ -277,19 +277,9 @@ a {
 button:hover {
   background-color: #6070ff;
   color: #fff;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  padding: 12px;
-  gap: 10px;
-  position: relative;
-  width: 124px;
-  height: 48px;
-  right: 30%;
-  top: 0;
 }
 
-.contact-button {
+#contact-button {
   align-items: center;
   padding: 10px;
   position: relative;
@@ -299,7 +289,7 @@ button:hover {
   border-radius: 8px;
 }
 
-.contact-button a {
+#contact-button a {
   width: 100px;
   height: 30px;
   font-family: 'Poppins', sans-serif;
@@ -312,7 +302,26 @@ button:hover {
   text-decoration: none;
 }
 
-button a:hover {
+/* #contact-button a:hover {
+  color: #fff;
+} */
+
+#contact-button a :hover {
+  background-color: #2230D2;
+  border: red 1px solid;
+  color: #fff;
+  width: 100px;
+  height: 30px;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+}
+
+ a:hover {
   color: #fff;
 }
 
