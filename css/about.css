@@ -91,7 +91,7 @@
   top: 5px;
 }
 
-/* FRAMEWORK AND SKILL STARTS HERE*/
+/* FRAMEWORK AND SKILL STARTS HERE */
 .lang-skills {
   display: inline;
   font-size: 20px;
@@ -100,22 +100,26 @@
   line-height: 24px;
   font-style: normal;
 }
+
 .framework {
   margin-left: 40px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
+
 .skills {
   margin-left: 40px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
+
 .image {
   padding-left: 50px;
 }
-/* FRAMEWORK AND SKILL ENDS HERE*/
+
+/* FRAMEWORK AND SKILL ENDS HERE */
 
 .basic li p {
   margin-left: auto;
