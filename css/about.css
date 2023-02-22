@@ -93,7 +93,8 @@
 
 /* FRAMEWORK AND SKILL STARTS HERE */
 .lang-skills {
-  display: inline;
+  display: flex;
+  flex-flow: column wrap;
   font-size: 20px;
   font-weight: 500;
   font-family: poppins, sans-serif;
@@ -102,14 +103,16 @@
 }
 
 .framework {
-  margin-left: 40px;
+  margin-left: 20px;
+  width: 90%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
 
 .skills {
-  margin-left: 40px;
+  margin-left: 20px;
+  width: 90%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -132,7 +135,7 @@
 
 .shape {
   position: relative;
-  bottom: 34vh;
+  bottom: 22vh;
   width: 327px;
   height: 1px;
   background: #dfe1e6;
@@ -141,7 +144,7 @@
 
 .shape-1 {
   position: relative;
-  bottom: 25vh;
+  bottom: 10vh;
   width: 327px;
   height: 1px;
   background: #dfe1e6;
