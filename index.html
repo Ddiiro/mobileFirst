@@ -4,7 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/card.css">
+    <link rel="stylesheet" href="css/about.css">
+    <link rel="stylesheet" href="css/contact.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -221,20 +224,22 @@
      <div><img class="shape-1" src="Images/Separator Bottom.png" alt=""></div> 
 
 </section>
-<section class="contact">
+<!-- This is the contact page -->
+<section id="contact">
     <h2>Contact Me</h2> 
 <p>
     If you have an application you are interested in developing, 
     a feature that you need built or a project that needs coding.
      I’d love to help with it 
 </p>
-   <input placeholder="Yeremias" type="text">
-   <input placeholder="natajayanj14@gmail.com" type="text">
-   <textarea placeholder="Write your message here" name="" id="" cols="30" rows="10"></textarea>
-
-<button  class="contact-button"><a href="">Get in touch</a></button>
-
-<div class=""><img src="Images/Shape.png" alt=""></div>
+<form action="https://formspree.io/f/xgebkzlz" method="post">
+   <input name="Name" placeholder="Yeremias" type="text" maxlength="30" required>
+   <input name="Email" placeholder="natajayanj14@gmail.com" type="email" required>
+   <textarea placeholder="Write your message here" name="Message" id="" cols="30" rows="10" maxlength="500" type="text" required></textarea>
+<button type="submit" id="contact-button"><a href="">Get in touch</a></button>
+</form>
+<div class="bottom"><img src="Images/Shape.png" alt=""></div>
 </section>
+<!-- the contact page ends here -->
 </body>
 </html>
