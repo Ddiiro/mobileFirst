@@ -12,8 +12,9 @@
 }
 
 .about {
-  margin-top: 40px;
-  width: 327px;
+  flex-direction: column;
+  margin: auto;
+  padding: 20px;
 }
 
 .about-social li {
