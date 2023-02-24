@@ -13,14 +13,23 @@
   font-size: 15px;
   line-height: 24px;
   letter-spacing: 0.03em;
-  color: #7F8CFF;
-  box-shadow: #7F8CFF;
+  color: #7f8cff;
+  box-shadow: #7f8cff;
   border: none;
 }
 
 #contact-button:hover {
+  box-shadow: 0 10px 10px -4px lightblue;
+}
+
+#contact-button:active {
   background-color: #2230d2;
-  color: #fff;
+  color: white;
+}
+
+#contact-button:disabled {
+  background-color: #e5e5e5;
+  color: #5e6c84;
 }
 
 #contact {
@@ -37,7 +46,6 @@
   bottom: 15vh;
   flex-direction: column;
   margin: auto;
-  padding: 20px;
   margin-top: 10vh;
 }
 
