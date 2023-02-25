@@ -47,7 +47,7 @@ main {
   padding: 20px;
 }
 
-h1 {
+#content1 , #content2 {
   color: #172b4d;
   font-family: 'Poppins', sans-serif;
   font-style: normal;
@@ -97,4 +97,73 @@ ul {
 ul li {
   margin-right: 20px;
   padding-bottom: 10vh;
+}
+
+@media only screen and (max-width: 768px) {
+  .header {
+    display: flex;
+    justify-items: baseline;
+  
+  }
+  .logo {
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+    font-style: bold;
+    line-height: 20px;
+    position: relative;
+    left: 7%;
+  }
+  nav {
+    display: flex;
+    justify-items: baseline;
+    margin-left: auto;
+  
+  }
+  .nav {
+    display: none;
+  }
+  
+  .nav-link {
+    
+    position: relative;
+    bottom: 1vh;
+  }
+
+  .nav-link a {
+    color: #344563;
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+    font-style: medium;
+    line-height: 20px;
+  }
+  
+  .first-section {
+    width: 80%;
+  }
+
+  #content1 {
+  font-size: 48px;
+  color: #091E42;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 5px;
+  margin-bottom: 0;
+  }
+
+  #content2 {
+    font-size: 48px;
+    color: #091E42;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    margin-bottom: 20px;
+  }
+
+  #content1::after{
+    content: "\a";
+    white-space: pre;
+   
+}
+
 }
