@@ -186,39 +186,36 @@ a {
 .grid-item-desktop{
   box-sizing: border-box;
   display: flex;
-  justify-content: space-evenly;
   padding: 10px;
   gap: 1rem;
-  grid-auto-flow: column;
-  flex-basis: 100%;
-  min-height: 496px;
+  min-width: 100%;
   background: #fff;
   border: 1px solid #dfe1e6;
   border-radius: 16px;
-}
-.grid-item-desktop > div {
-  flex-basis: 100%;
-  min-height: 448px;
-  flex-grow: 1;
-  flex-shrink: 1;
+  margin-bottom: 5vh;
 }
 
-.image {
-  min-width: 400px;
+.main-img {
+  display: flex;
+  min-width: 60%;
 }
 
 .snap-desktop{
   max-width: 100%;
-  min-height: 100%;
+  min-height: 220px;
 }
 
 .tonic-desktop {
+  min-width: 100%;
+  max-height: 36px;
   font-family: 'Poppins', sans-serif;
   font-style: normal;
+  display: flex;
   font-weight: 700;
-  font-size: 52px;
+  font-size: 32px;
   line-height: 44px;
   color: #172b4d;
+  margin-bottom: 0;
 }
 
 .multi-desktop {
@@ -235,38 +232,35 @@ a {
 
 .container-desktop {
   display: flex;
-  flex-shrink: 1;
-  flex: 1;
-  padding-left: 10px;
-  gap: 1rem;
-  min-height: 18px;
-  flex-basis: 100%;
+  gap: 1.5rem;
+  max-height: 18px;
+  min-width: 80%;
   align-items: baseline;
+  margin-bottom: 2rem;
 }
 
 .canopy-desktop{
   display: flex;
+  max-width: 55px;
+  max-height: 16px;
   font-family: 'Poppins', sans-serif;
-  font-style: medium;
-  margin-top: 0;
-  padding-top: 0;
-  font-size: 18px;
-  line-height: 24px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 16px;
   color: #344563;
 }
 
 .details-desktop {
   display: flex;
   align-items: baseline;
-  padding-right: 2rem;
-  flex-basis: 100%;
 }
 
 .details-desktop p {
   color: #6b778c;
   font-family: 'Poppins', sans-serif;
   font-style: bold;
-  font-size: 18px;
+  font-size: 15px;
 }
 
 .details-desktop img {
@@ -292,11 +286,15 @@ a {
 
 .link-desktop {
   display: flex;
+  margin-top: 0;
+  margin-left: 0;
+  padding-top: 0;
+  padding-left: 0;
   text-decoration: none;
+  gap: 1rem;
 }
 
 .link-desktop li {
-  flex-basis: 100%;
   min-height: 24px;
   background: #ebebff;
   font-family: 'Poppins', sans-serif;
@@ -306,7 +304,6 @@ a {
   color: #6070ff;
   cursor: pointer;
   display: flex;
-  flex-direction: row;
 }
 
 .link-desktop li a {
