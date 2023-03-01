@@ -170,19 +170,19 @@ a {
 }
 
 @media only screen and (min-width: 768px) {
-  * {
-    box-sizing: border-box;
-  }
-  body {
-    max-width: 90%;
-    margin: auto;
-    background-color: #e5e5e5;
-  }
-  .mobile-card {
-    display: none;
-  }
-  .desktop-card { 
-    display: contents;
+* {
+  box-sizing: border-box;
+}
+body {
+  max-width: 90%;
+  margin: auto;
+  background-color: #e5e5e5;
+}
+.mobile-card {
+  display: none;
+}
+.desktop-card { 
+  display: contents;
 }
 .grid-item-desktop{
   box-sizing: border-box;
