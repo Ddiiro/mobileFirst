@@ -149,28 +149,28 @@ form {
     display: flex;
     flex-direction: column;
     justify-content: center;
-
   }
-   #contact h2 {
+
+  #contact h2 {
     order: 1;
     width: 90%;
     display: flex;
     justify-content: center;
-   }
+  }
 
-   #contact p {
+  #contact p {
     order: 2;
     margin: auto;
     width: 70%;
     display: flex;
     justify-content: center;
     font-family: 'Poppins', sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 20px;
-   }
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+  }
 
-   form {
+  form {
     position: relative;
     bottom: 20vh;
     margin: auto;
@@ -179,20 +179,20 @@ form {
     justify-content: center;
     flex-direction: column;
     order: 3;
-   }
-   #contact textarea {
+  }
+
+  #contact textarea {
     order: 2;
-   }
+  }
 
-   #contact input {
+  #contact input {
     order: 1;
-   }
+  }
 
-   #contact button {
+  #contact button {
     display: flex;
     justify-content: center;
     order: 3;
     margin-left: 30%;
-   }
-
+  }
 }

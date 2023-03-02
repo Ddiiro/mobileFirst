@@ -39,7 +39,6 @@ nav {
   max-width: 20px;
   min-height: 20%;
   margin-right: auto;
-
 }
 
 main {
@@ -53,7 +52,8 @@ main {
   padding: 20px;
 }
 
-#content1 , #content2 {
+#content1,
+#content2 {
   color: #172b4d;
   font-family: 'Poppins', sans-serif;
   font-style: normal;
@@ -96,6 +96,7 @@ p {
   right: 32px;
   align-items: baseline;
 }
+
 .social li {
   margin-right: 20px;
   padding-bottom: 10vh;
@@ -106,8 +107,8 @@ p {
     display: grid;
     grid-template-columns: 8fr 2fr;
     justify-items: baseline;
-  
   }
+
   .logo {
     font-size: 18px;
     font-family: 'Poppins', sans-serif;
@@ -116,16 +117,17 @@ p {
     position: relative;
     left: 7%;
   }
+
   nav {
     display: flex;
     justify-items: baseline;
     margin-left: auto;
-  
   }
+
   .nav {
     display: none;
   }
-  
+
   .nav-link {
     bottom: 1vh;
     display: contents;
@@ -133,7 +135,7 @@ p {
     gap: 1rem;
   }
 
-  .nav-link li{
+  .nav-link li {
     list-style: none;
   }
 
@@ -144,7 +146,7 @@ p {
     font-style: medium;
     line-height: 20px;
   }
-  
+
   .first-section {
     margin-top: 5vh;
     min-width: 90%;
@@ -153,33 +155,30 @@ p {
     background-size: cover;
     display: flex;
     flex-direction: column;
-    margin: auto;
     padding: 20px;
   }
 
   #content1 {
-  font-size: 48px;
-  color: #091E42;
-  font-family: 'Poppins', sans-serif;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 5px;
-  margin-bottom: 20px;
+    font-size: 48px;
+    color: #091e42;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 5px;
+    margin-bottom: 20px;
   }
 
   #content2 {
     font-size: 48px;
-    color: #091E42;
+    color: #091e42;
     font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 700;
     margin-bottom: 20px;
   }
 
-  #content1::after{
+  #content1::after {
     content: "\a";
     white-space: pre;
-   
-}
-
+  }
 }
