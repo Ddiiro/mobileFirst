@@ -30,6 +30,9 @@ ul {
   margin: auto;
   padding: 20px;
 }
+.about-social {
+padding-left: 0;
+}
 
 .about-social li {
   margin-right: 20px;
@@ -64,32 +67,27 @@ ul {
   font-weight: 500;
   font-size: 20px;
   line-height: 24px;
-  position: relative;
-  bottom: 80px;
 }
 
 .lang img {
   width: 5%;
   height: 10%;
   margin-left: auto;
-  position: relative;
-  bottom: 80px;
 }
 
 .basic {
   display: flex;
-  width: 80%;
+  width: 90%;
+
   flex-direction: column;
   border-radius: 8px;
   align-items: baseline;
-  position: relative;
-  bottom: 70px;
 }
 
 .stack {
-  width: 100%;
-  height: 20px;
-  padding: 16px;
+  max-width: 100%;
+  min-height: 20px;
+  padding: 16px 16px 16px 5px;
   background: #f7f7f9;
   border-radius: 8px;
   display: flex;
@@ -105,6 +103,9 @@ ul {
 
 .lang-skills {
   display: flex;
+  margin-left: 0px;
+  padding-left: 5px;
+  gap: 1rem;
   flex-flow: column wrap;
   font-size: 20px;
   font-weight: 500;
@@ -146,18 +147,18 @@ ul {
 
 .shape {
   position: relative;
-  bottom: 22vh;
-  width: 327px;
-  height: 1px;
+  bottom: 12vh;
+  min-width: 327px;
+  max-height: 1px;
   background: #dfe1e6;
   border-radius: 10px;
 }
 
 .shape-1 {
   position: relative;
-  bottom: 10vh;
-  width: 327px;
-  height: 1px;
+  bottom: 8vh;
+  min-width: 327px;
+  max-height: 1px;
   background: #dfe1e6;
   border-radius: 10px;
 }
