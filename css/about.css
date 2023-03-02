@@ -30,8 +30,9 @@ ul {
   margin: auto;
   padding: 20px;
 }
+
 .about-social {
-padding-left: 0;
+  padding-left: 0;
 }
 
 .about-social li {
@@ -78,7 +79,6 @@ padding-left: 0;
 .basic {
   display: flex;
   width: 90%;
-
   flex-direction: column;
   border-radius: 8px;
   align-items: baseline;
@@ -103,7 +103,7 @@ padding-left: 0;
 
 .lang-skills {
   display: flex;
-  margin-left: 0px;
+  margin-left: 0;
   padding-left: 5px;
   gap: 1rem;
   flex-flow: column wrap;
