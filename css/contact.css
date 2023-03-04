@@ -32,7 +32,7 @@
   color: #5e6c84;
 }
 
-#contact {
+#contact-wrapper {
   background-image: url(/Images/contact\ form\ shapes-mobile@2x.png);
   background-color: #6070ff;
   background-repeat: no-repeat;
@@ -141,11 +141,21 @@ form {
 
 @media only screen and (min-width: 768px) {
   #contact {
-    width: 90%;
-    background-image: url(/Images/contact\ form\ shapes-mobile@2x.png);
+    position: relative;
+    bottom: 20vh;
+  }
+  #form-wrapper {
+    width: 80%;
+    margin: auto;
+    padding: 0;
+    position: relative;
+    bottom: 5vh;
+  }
+  #contact-wrapper {
+    background: url("/Images/desktop/contact\ form\ background\ shapes@2x.png") no-repeat center center;
     background-color: #6070ff;
-    background-repeat: no-repeat;
     background-size: cover;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -153,17 +163,19 @@ form {
 
   #contact h2 {
     order: 1;
-    width: 90%;
+    width: 60%;
     display: flex;
     justify-content: center;
+    position: relative;
+    left: 20%;
   }
 
   #contact p {
     order: 2;
     margin: auto;
-    width: 70%;
+    width: 73%;
+    position: relative;
     display: flex;
-    justify-content: center;
     font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 400;
@@ -172,9 +184,11 @@ form {
 
   form {
     position: relative;
-    bottom: 20vh;
+    bottom: 15vh;
     margin: auto;
-    width: 70%;
+    position: relative;
+    left: 5vh;
+    width: 65%;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -194,5 +208,8 @@ form {
     justify-content: center;
     order: 3;
     margin-left: 30%;
+  }
+  .bottom {
+    display: none;
   }
 }

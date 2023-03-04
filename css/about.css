@@ -172,6 +172,10 @@ ul {
     display: contents;
   }
 
+  .about {
+    border-radius: 100px 0% 0% 0%;
+  }
+
   .aboutPage-desktop {
     box-sizing: border-box;
     display: flex;

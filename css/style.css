@@ -103,13 +103,13 @@ p {
 }
 
 @media only screen and (min-width: 768px) {
-  /* .landingPage {
-    background-image: url(/Images/desktop/Header\ bg.svg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    min-width: 1140px;
-    max-height: 196px;
-  } */
+  .landingPage {
+     background: url("/Images/desktop/Header\ bg.svg") no-repeat center center;
+  background-size: cover;
+  height: 100vh;
+  position: relative;
+  }
+ 
   .header {
     display: grid;
     grid-template-columns: 8fr 2fr;
@@ -155,14 +155,14 @@ p {
   }
 
   .first-section {
-    margin-top: 5vh;
-    min-width: 90%;
+    margin-top: 10vh;
+    max-width: 720px;
     background-image: url(Images/header-shapes\ mobile.png);
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
     flex-direction: column;
-    padding: 20px;
+    padding: 10px;
   }
 
   #content1 {
