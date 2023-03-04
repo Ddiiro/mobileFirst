@@ -103,6 +103,13 @@ p {
 }
 
 @media only screen and (min-width: 768px) {
+  /* .landingPage {
+    background-image: url(/Images/desktop/Header\ bg.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-width: 1140px;
+    max-height: 196px;
+  } */
   .header {
     display: grid;
     grid-template-columns: 8fr 2fr;
