@@ -61,9 +61,9 @@ form {
   bottom: 50px;
 }
 
-#contact p {
+#contact-wrapper p {
   position: relative;
-  width: 327px;
+  min-width: 327px;
   height: 102px;
   top: 30px;
   font-family: 'Poppins', sans-serif;
@@ -135,8 +135,8 @@ form {
 .bottom {
   order: 4;
   position: relative;
-  top: 20vh;
-  left: 18vh;
+  top: 18vh;
+  left: 12vh;
 }
 
 @media only screen and (min-width: 768px) {
@@ -155,7 +155,7 @@ form {
     background: url("/Images/desktop/contact\ form\ background\ shapes@2x.png") no-repeat center center;
     background-color: #6070ff;
     background-size: cover;
-    height: 100vh;
+    height: 120vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -170,10 +170,9 @@ form {
     left: 20%;
   }
 
-  #contact p {
+  .warpper {
     order: 2;
     margin: auto;
-    width: 73%;
     position: relative;
     display: flex;
     font-family: 'Poppins', sans-serif;
@@ -184,10 +183,10 @@ form {
 
   form {
     position: relative;
-    bottom: 15vh;
     margin: auto;
     position: relative;
     left: 5vh;
+    bottom: 20vh;
     width: 65%;
     display: flex;
     justify-content: center;
@@ -207,7 +206,7 @@ form {
     display: flex;
     justify-content: center;
     order: 3;
-    margin-left: 30%;
+    margin-left: 25%;
   }
   .bottom {
     display: none;
