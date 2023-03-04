@@ -177,7 +177,7 @@ a {
   body {
     max-width: 90%;
     margin: auto;
-    background-color: #e5e5e5;
+    background-color: #fff;
   }
 
   .mobile-card {
@@ -197,6 +197,7 @@ a {
     border: 1px solid #dfe1e6;
     border-radius: 16px;
     padding: 20px;
+    box-shadow: 0 10px 10px rgb(0 0 0 / 0.3);
   }
 
   .main-img {
