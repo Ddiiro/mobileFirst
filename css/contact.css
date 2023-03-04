@@ -38,7 +38,7 @@
   background-repeat: no-repeat;
   background-position-x: 120px;
   background-position-y: 12px;
-  background-size: auto 757px;
+  background-size: 80% auto;
   border-radius: 100px 0% 0% 0%;
   padding: 20px;
   height: 773px;
@@ -149,21 +149,23 @@ form {
     width: 80%;
     margin: auto;
     padding: 0;
+    max-height: 100vh;
     position: relative;
-    bottom: 5vh;
+    bottom: 15vh;
   }
 
   #contact-wrapper {
     background: url("/Images/desktop/contact\ form\ background\ shapes@2x.png") no-repeat center center;
     background-color: #6070ff;
-    background-size: cover;
-    height: 120vh;
+    background-size: 90% auto;
+    /* background-size: cover; */
+    height: 110vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
   }
 
-  #contact h2 {
+  #contact-wrapper h2 {
     order: 1;
     width: 60%;
     display: flex;
@@ -172,9 +174,10 @@ form {
     left: 20%;
   }
 
-  .warpper {
+  #form-wrapper p {
     order: 2;
     margin: auto;
+    width: 70%;
     position: relative;
     display: flex;
     font-family: 'Poppins', sans-serif;
@@ -183,11 +186,10 @@ form {
     font-size: 20px;
   }
 
-  form {
+  #form-wrapper form {
     margin: auto;
     position: relative;
     left: 5vh;
-    bottom: 20vh;
     width: 65%;
     display: flex;
     justify-content: center;
@@ -195,11 +197,11 @@ form {
     order: 3;
   }
 
-  #contact textarea {
+  #form-wrapper textarea {
     order: 2;
   }
 
-  #contact input {
+  #form-wrapper input {
     order: 1;
   }
 
