@@ -2,15 +2,17 @@ html,
 body {
   width: 100%;
   overflow-x: hidden;
-  margin: 0;
-  padding: 0;
+  background-color: #fff;
 }
 
 .header {
-  display: flex;
+  max-width: 95%;
+  margin: auto;
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: 12fr 1fr;
   align-items: baseline;
   padding: 20px 20px 0 20px;
-  margin-bottom: 0;
 }
 
 .logo {
@@ -20,47 +22,45 @@ body {
   font-weight: 700;
   font-size: 18px;
   line-height: 20px;
-  flex: none;
-  order: 0;
-  flex-grow: 0;
   display: flex;
-  align-items: center;
   text-align: center;
   text-decoration: none;
 }
 
+nav {
+  display: flex;
+  margin-right: auto;
+}
+
+.nav-link {
+  display: none;
+}
+
 .nav {
-  position: relative;
-  left: 35vh;
-  width: 20%;
-  height: 20%;
+  max-width: 20px;
+  min-height: 20%;
+  margin-right: auto;
 }
 
 main {
   background-image: url(Images/header-shapes\ mobile.png);
   background-repeat: no-repeat;
   background-size: cover;
-  width: 327px;
+  max-width: 90%;
   display: flex;
   flex-direction: column;
   margin: auto;
   padding: 20px;
 }
 
-h1 {
+#content1,
+#content2 {
   color: #172b4d;
   font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 700;
-  font-size: 45px;
+  font-size: 40px;
   line-height: 52px;
-  padding-top: 10vh;
-  flex: none;
-  order: 0;
-  flex-grow: 0;
-  display: flex;
-  align-items: left;
-  text-align: left;
 }
 
 p {
@@ -76,6 +76,10 @@ p {
   text-align: left;
 }
 
+.desktop-card {
+  display: none;
+}
+
 .contain {
   color: #7f8cff;
   font-family: 'Poppins', sans-serif;
@@ -85,7 +89,7 @@ p {
   line-height: 24px;
 }
 
-ul {
+.social {
   display: flex;
   justify-content: start;
   list-style: none;
@@ -94,7 +98,95 @@ ul {
   align-items: baseline;
 }
 
-ul li {
+.social li {
   margin-right: 20px;
   padding-bottom: 10vh;
+}
+
+@media only screen and (min-width: 768px) {
+  .landingPage {
+    background: url("/Images/desktop/Header\ bg.svg") no-repeat center center;
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+  }
+
+  .header {
+    display: grid;
+    grid-template-columns: 8fr 2fr;
+    justify-items: baseline;
+  }
+
+  .logo {
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+    font-style: bold;
+    line-height: 20px;
+    position: relative;
+    left: 7%;
+  }
+
+  nav {
+    display: flex;
+    justify-items: baseline;
+    margin-left: auto;
+  }
+
+  .nav {
+    display: none;
+  }
+
+  .nav-link {
+    bottom: 1vh;
+    display: contents;
+    display: flex;
+    gap: 1rem;
+  }
+
+  .nav-link li {
+    list-style: none;
+  }
+
+  .nav-link a {
+    color: #344563;
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+    font-style: medium;
+    line-height: 20px;
+  }
+
+  .first-section {
+    margin-top: 10vh;
+    max-width: 720px;
+    background-image: url(Images/header-shapes\ mobile.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  #content1 {
+    font-size: 48px;
+    color: #091e42;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 5px;
+    margin-bottom: 20px;
+  }
+
+  #content2 {
+    font-size: 48px;
+    color: #091e42;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    margin-bottom: 20px;
+  }
+
+  #content1::after {
+    content: "\a";
+    white-space: pre;
+  }
 }

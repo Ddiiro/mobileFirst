@@ -32,13 +32,13 @@
   color: #5e6c84;
 }
 
-#contact {
+#contact-wrapper {
   background-image: url(/Images/contact\ form\ shapes-mobile@2x.png);
   background-color: #6070ff;
   background-repeat: no-repeat;
   background-position-x: 120px;
   background-position-y: 12px;
-  background-size: auto 757px;
+  background-size: 80% auto;
   border-radius: 100px 0% 0% 0%;
   padding: 20px;
   height: 773px;
@@ -61,9 +61,9 @@ form {
   bottom: 50px;
 }
 
-#contact p {
+#contact-wrapper p {
   position: relative;
-  width: 327px;
+  min-width: 327px;
   height: 102px;
   top: 30px;
   font-family: 'Poppins', sans-serif;
@@ -135,6 +135,85 @@ form {
 .bottom {
   order: 4;
   position: relative;
-  top: 20vh;
-  left: 18vh;
+  top: 18vh;
+  left: 12vh;
+}
+
+@media only screen and (min-width: 768px) {
+  #contact {
+    position: relative;
+    bottom: 20vh;
+  }
+
+  #form-wrapper {
+    width: 80%;
+    margin: auto;
+    padding: 0;
+    max-height: 100vh;
+    position: relative;
+    bottom: 15vh;
+  }
+
+  #contact-wrapper {
+    background: url("/Images/desktop/contact\ form\ background\ shapes@2x.png") no-repeat center center;
+    background-color: #6070ff;
+    background-size: 90% auto;
+
+    /* background-size: cover; */
+    height: 110vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  #contact-wrapper h2 {
+    order: 1;
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    left: 20%;
+  }
+
+  #form-wrapper p {
+    order: 2;
+    margin: auto;
+    width: 70%;
+    position: relative;
+    display: flex;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+  }
+
+  #form-wrapper form {
+    margin: auto;
+    position: relative;
+    left: 5vh;
+    width: 65%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    order: 3;
+  }
+
+  #form-wrapper textarea {
+    order: 2;
+  }
+
+  #form-wrapper input {
+    order: 1;
+  }
+
+  #contact button {
+    display: flex;
+    justify-content: center;
+    order: 3;
+    margin-left: 25%;
+  }
+
+  .bottom {
+    display: none;
+  }
 }
