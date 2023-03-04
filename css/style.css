@@ -104,12 +104,12 @@ p {
 
 @media only screen and (min-width: 768px) {
   .landingPage {
-     background: url("/Images/desktop/Header\ bg.svg") no-repeat center center;
-  background-size: cover;
-  height: 100vh;
-  position: relative;
+    background: url("/Images/desktop/Header\ bg.svg") no-repeat center center;
+    background-size: cover;
+    height: 100vh;
+    position: relative;
   }
- 
+
   .header {
     display: grid;
     grid-template-columns: 8fr 2fr;

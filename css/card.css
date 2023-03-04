@@ -187,16 +187,16 @@ a {
   .desktop-card {
     display: contents;
   }
-  
+
   .grid-item-desktop {
-  margin: 24px 24px 10vh 24px;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-gap: 32px;
-  background: #fff;
-  border: 1px solid #dfe1e6;
-  border-radius: 16px;
-  padding: 20px;
+    margin: 24px 24px 10vh 24px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 32px;
+    background: #fff;
+    border: 1px solid #dfe1e6;
+    border-radius: 16px;
+    padding: 20px;
   }
 
   .main-img {
