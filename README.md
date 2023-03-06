@@ -53,6 +53,9 @@ Mobile First is a project that helps test and learn and the basic set up of an h
 - Linter.
 - Figma
 
+### 🚀 Live Demo <a name="live-demo"></a>
+You can access the live demo here: <a href="https://ddiiro.github.io/mobileFirst/">Ddiiro's Personal Portfolio</a>
+
 <!-- GETTING STARTED -->
 
 ## 💻 Getting Started <a name="getting-started"></a>
