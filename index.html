@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="css/card.css">
     <link rel="stylesheet" href="css/about.css">
     <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="css/modal.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -25,10 +26,19 @@
         </div>
        <div>
         <div>
-
-        
         <nav>
-            <img class="nav" src="Images/menu-button.png" alt="">
+            <img class="nav" id="myBtn" src="Images/menu-button.png" alt="">
+
+            <div id="myModal" class="modal">
+
+                <!-- Modal content -->
+                <div class="modal-content">
+                  <span class="close">&times;</span>
+                  <p>Some text in the Modal..</p>
+                </div>
+              
+              </div>
+
             <ul class="nav-link">
                 <li><a href="">Portfolio</a></li>
                 <li><a href="">About</a></li>
@@ -489,6 +499,9 @@
         
     </section>
     <!-- the contact page ends here -->
+
+    <script src="/Javascript/modal.js">
+    </script>
 </body>
 
 </html>
