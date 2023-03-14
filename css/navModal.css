@@ -7,18 +7,22 @@
   top: 0;
   width: 100%; /* Full width */
   height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
+  overflow: none; /* Enable scroll not needed */
   background-color: #6070ff;
-  background-color: rgba(96, 112, 255, 0.7);  /* Black w/ opacity */
+  background-color: rgba(96, 112, 255,0); 
+  mix-blend-mode: multiply;
+  backdrop-filter:blur(5px);
 }
 
 /* Modal Content */
 .modal-content {
-  background-color: rgba(96, 112, 255, 0.7); /* Fallback color */
+  background-color: rgba(96, 112, 255); /* Fallback color */
   margin: auto;
   padding: 20px;
   width: 90%;
   height: 100%;
+  mix-blend-mode: multiply;
+backdrop-filter:blur(5px);
 }
 
 /* The Close Button */
@@ -38,25 +42,26 @@
 }
 
 .modal-list {
-  padding-top: 2rem;
+  padding-top: 1rem;
   display: flex;
   flex-direction: column;
-  gap: 1rem;
+  gap: 2rem;
 }
 
-.modal-list li a {
+.modal-list li a { 
   color: #fff;
   font-size: 32px;
   line-height: 44px;
-  font-weight: 600;
+  font-weight: 900;
   font-family: 'Poppins', sans-serif;
-  position: relative;
 }
 
 @media only screen and (min-width: 768px) {
   .modal {
     display: none;
     background-color: transparent;
+    mix-blend-mode:normal;
+    backdrop-filter:unset;
   }
 
   .modal-content {
