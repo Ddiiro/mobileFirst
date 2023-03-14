@@ -9,9 +9,9 @@
   height: 100%; /* Full height */
   overflow: none; /* Enable scroll not needed */
   background-color: #6070ff;
-  background-color: rgba(96, 112, 255,0); 
+  background-color: rgba(96, 112, 255, 0);
   mix-blend-mode: multiply;
-  backdrop-filter:blur(5px);
+  backdrop-filter: blur(5px);
 }
 
 /* Modal Content */
@@ -22,7 +22,7 @@
   width: 90%;
   height: 100%;
   mix-blend-mode: multiply;
-backdrop-filter:blur(5px);
+  backdrop-filter: blur(5px);
 }
 
 /* The Close Button */
@@ -48,7 +48,7 @@ backdrop-filter:blur(5px);
   gap: 2rem;
 }
 
-.modal-list li a { 
+.modal-list li a {
   color: #fff;
   font-size: 32px;
   line-height: 44px;
@@ -60,8 +60,8 @@ backdrop-filter:blur(5px);
   .modal {
     display: none;
     background-color: transparent;
-    mix-blend-mode:normal;
-    backdrop-filter:unset;
+    mix-blend-mode: normal;
+    backdrop-filter: unset;
   }
 
   .modal-content {
