@@ -1,0 +1,70 @@
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: none; /* Enable scroll not needed */
+  background-color: #6070ff;
+  background-color: rgba(96, 112, 255, 0);
+  mix-blend-mode: multiply;
+  backdrop-filter: blur(5px);
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: rgba(96, 112, 255); /* Fallback color */
+  margin: auto;
+  padding: 20px;
+  width: 90%;
+  height: 100%;
+  mix-blend-mode: multiply;
+  backdrop-filter: blur(5px);
+}
+
+/* The Close Button */
+.close {
+  position: fixed; /* Stay in place */
+  color: #fff;
+  margin-left: 85%;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal-list {
+  padding-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.modal-list li a {
+  color: #fff;
+  font-size: 32px;
+  line-height: 44px;
+  font-weight: 900;
+  font-family: 'Poppins', sans-serif;
+}
+
+@media only screen and (min-width: 768px) {
+  .modal {
+    display: none;
+    background-color: transparent;
+    mix-blend-mode: normal;
+    backdrop-filter: unset;
+  }
+
+  .modal-content {
+    display: none;
+  }
+}

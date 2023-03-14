@@ -33,16 +33,9 @@ Mobile First is a project that helps test and learn and the basic set up of an h
 
 
 ### Tech Stack <a name="tech-stack"></a>
-
-> Html, CSS & Figma.
-
-
-<details>
-<summary>Database</summary>
-  <ul>
-    <li><a href="https://www.postgresql.org/">PostgreSQL</a></li>
-  </ul>
-</details>
+- HTML
+- CSS
+- javascript
 
 <!-- Features -->
 
@@ -54,7 +47,9 @@ Mobile First is a project that helps test and learn and the basic set up of an h
 - Figma
 
 ### 🚀 Live Demo <a name="live-demo"></a>
-You can access the live demo here: <a href="https://ddiiro.github.io/mobileFirst/">Ddiiro's Personal Portfolio</a>
+Link to the live demo is still under construction 🛠
+
+Video explianing the project <a href="https://www.loom.com/share/54a1d208612b408c8c483e8c078b4e4c">Live Video</a>
 
 <!-- GETTING STARTED -->
 
@@ -160,7 +155,7 @@ If you like this project please give it a star
 
 ## 📝 License <a name="license"></a>
 
-This project is [MIT](https://github.com/citec-47/portfolio/blob/mobile-version/LICENSE.md) licensed.
+This project is [MIT](https://github.com/Ddiiro/mobileFirst/blob/master/LICENSE) licensed.
 
 
 
