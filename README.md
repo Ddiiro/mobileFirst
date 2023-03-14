@@ -33,11 +33,9 @@ Mobile First is a project that helps test and learn and the basic set up of an h
 
 
 ### Tech Stack <a name="tech-stack"></a>
-
-> Html, CSS & Figma.
-
-
-<details>
+- HTML
+- CSS
+- javascript
 
 <!-- Features -->
 
