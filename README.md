@@ -162,7 +162,7 @@ If you like this project please give it a star
 
 ## 📝 License <a name="license"></a>
 
-This project is [MIT](https://github.com/Ddiiro/mobileFirst/new/master) licensed.
+This project is [MIT](https://github.com/Ddiiro/mobileFirst/blob/master/LICENSE) licensed.
 
 
 
