@@ -38,11 +38,6 @@ Mobile First is a project that helps test and learn and the basic set up of an h
 
 
 <details>
-<summary>Database</summary>
-  <ul>
-    <li><a href="https://www.postgresql.org/">PostgreSQL</a></li>
-  </ul>
-</details>
 
 <!-- Features -->
 
