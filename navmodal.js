@@ -14,6 +14,7 @@ const linkContact = document.getElementsByClassName('link-2')[0];
 // When the user clicks the button, open the modal
 btn.onclick = function btn() {
   modal.style.display = 'block';
+  modal.style.backgroundColor = 'none';
 };
 
 // When the user clicks on <span> (x), close the modal
