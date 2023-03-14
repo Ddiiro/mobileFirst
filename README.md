@@ -47,7 +47,7 @@ Mobile First is a project that helps test and learn and the basic set up of an h
 - Figma
 
 ### 🚀 Live Demo <a name="live-demo"></a>
-You can access the live demo here: <a href="https://ddiiro.github.io/mobileFirst/">Ddiiro's Personal Portfolio</a>
+Link to the live demo is still under construction 🛠
 
 Video explianing the project <a href="https://www.loom.com/share/54a1d208612b408c8c483e8c078b4e4c">Live Video</a>
 

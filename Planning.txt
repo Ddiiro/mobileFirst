@@ -1,0 +1,38 @@
+const URL = "http://joseph.com"
+
+res = url.data
+
+res.title
+res.description
+
+
+Mobile
+    - Card [0,1]
+    -mobile[0,1,2,3]
+    -Desktop[0,1,2,3]
+
+    cards.desktop[2]
+
+      card: [
+        mbile;[
+        tonic{
+            name :"Tonic",
+
+            description :"jhgasjgdhsgvdsghd"
+            img:"img/src/joe.png",
+            tech:'[html. css, js]',
+        }.
+        MultiPost{
+
+        },
+        Facebook{
+
+        },
+        uber{
+
+        },
+        ],
+        Desktop :[
+
+        ]
+        ]
