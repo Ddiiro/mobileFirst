@@ -1,0 +1,79 @@
+.modal-Container {
+    display: none;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 16px;
+    gap: 2rem;
+    position: absolute;
+    width: 343px;
+    height: 713px;
+    left: calc(50% - 343px/2);
+    background: #fff;
+    border: 1px solid #DFE1E6;
+    border-radius: 16px;
+}
+
+.tonicPop{
+    min-width: 100%;
+    max-height: 36px;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    display: flex;
+    font-weight: 700;
+    position: relative;
+    font-size: 32px;
+    line-height: 44px;
+    color: #172b4d;
+    margin-bottom: 0;
+    bottom: 45px;
+}
+
+.containerPop {
+    display: flex;
+    gap: 2.5rem;
+    max-height: 18px;
+    min-width: 100%;
+    align-items: baseline;
+    position: relative;
+    bottom: 15rem;
+    right: 4rem;
+}
+
+.snapPop {
+    width: 311px;
+    height: 220px;
+    border-radius: 8px;
+    margin-top: 1rem;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+.modal-Container p {
+    width: 311px;
+    min-height: 170px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 24px;
+    color: #344563;
+    flex: none;
+    order: 2;
+    flex-grow: 0;
+}
+
+.modal-Container .closePop {
+    max-width: 12px;
+    margin-left: 85%;
+    font-weight: bold;
+  }
+  
+  .closePop:hover,
+  .closePop:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
