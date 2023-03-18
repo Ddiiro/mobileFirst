@@ -115,49 +115,66 @@ const cards = [
 
 cards.forEach((card) => {
   const main = document.querySelector('#main');
+  main.classList.add('grid-container');
   const gridItem = document.createElement('div');
-  gridItem.classList.add('grid-item');
+  gridItem.classList.add('card');
   main.append(gridItem);
+
   const img = document.createElement('img');
-  img.classList.add('snap');
+  img.classList.add('card-img-top');
+  img.classList.add('p-2');
   gridItem.append(img);
   img.src = card.image;
   img.alt = 'img';
-  const title = document.createElement('h1');
-  title.classList.add('tonic');
-  gridItem.append(title);
-  title.innerText = card.title;
-  const container = document.createElement('div');
-  container.classList.add('container');
-  gridItem.append(container);
-  const canopy = document.createElement('div');
-  canopy.classList.add('canopy');
-  container.append(canopy);
-  card.subtitle.forEach((intro) => {
-    const introtext = document.createElement('p');
-    canopy.append(introtext);
-    introtext.textContent = intro.stackName;
-  });
 
-  const stackItem = document.createElement('div');
-  stackItem.classList.add('details');
-  container.append(stackItem);
-  card.subtitle.forEach((stack) => {
-    const seperator = document.createElement('img');
-    stackItem.append(seperator);
-    seperator.src = '/Images/Counter.png';
-    seperator.alt = 'img';
-    const stacktext = document.createElement('p');
-    stackItem.append(stacktext);
-    stacktext.textContent = stack.stack;
-  });
+  const container = document.createElement('div');
+  container.classList.add('card-body');
+  gridItem.append(container);
+
+  const title = document.createElement('h1');
+  title.classList.add('card-title"');
+  container.append(title);
+  title.innerText = card.title;
+
+  const subtext = document.createElement('div');
+  subtext.classList.add('subtext');
+  subtext.classList.add('d-flex');
+  subtext.classList.add('flex-row');
+  container.append(subtext);
+
+  const canopy = document.createElement('p');
+  canopy.classList.add('p-2');
+  subtext.append(canopy);
+  canopy.innerText = 'CANOPY';
+
+  const dot = document.createElement('img');
+  subtext.append(dot);
+  dot.classList.add('seperator');
+  dot.src = '/Images/Counter.png';
+  dot.alt = 'img';
+
+  const backend = document.createElement('p');
+  canopy.classList.add('p-2');
+  subtext.append(backend);
+  backend.innerText = 'Backend';
+
+  const dot2 = document.createElement('img');
+  subtext.append(dot2);
+  dot.classList.add('seperator');
+  dot2.src = '/Images/Counter.png';
+  dot2.alt = 'img';
+
+  const year = document.createElement('p');
+  year.classList.add('p-2');
+  subtext.append(year);
+  year.innerText = '2015';
 
   const content = document.createElement('div');
   content.classList.add('content');
   gridItem.append(content);
-  const details = document.createElement('p');
-  content.append(details);
-  details.innerText = card.description;
+  const detail = document.createElement('p');
+  content.append(detail);
+  detail.innerText = card.description;
   const technologies = document.createElement('ul');
   technologies.classList.add('link');
   gridItem.append(technologies);
@@ -182,114 +199,109 @@ cards.forEach((card) => {
   const anchorDetails = document.createElement('a');
   button.append(anchorDetails);
   anchorDetails.textContent = 'See Project';
-  const closeButton = document.createElement('img');
-  closeButton.classList.add('close');
-  closeButton.alt = 'closepop img';
-  closeButton.src = 'Images/cross.png';
-  modal.append(closeButton);
-  closeButton.addEventListener('click', () => {
-    modal.style.display = 'none';
-  });
+  const exit = document.createElement('div');
+  exit.classList.add('exit');
+  modal.append(exit);
+  // const closeButton = document.createElement('img');
+  // closeButton.classList.add('closepop');
+  // closeButton.alt = 'closepop img';
+  // closeButton.src = 'Images/cross.png';
+  // exit.append(closeButton);
+  // closeButton.addEventListener('click', () => {
+  //   modal.style.display = 'none';
+  // });
 
-  const titlePop = document.createElement('h1');
-  titlePop.classList.add('tonicPop');
-  modal.append(titlePop);
-  titlePop.innerText = card.title;
-  const containerPop = document.createElement('div');
-  containerPop.classList.add('containerPop');
-  modal.append(containerPop);
-  const canopyPop = document.createElement('div');
-  canopyPop.classList.add('canopy');
-  containerPop.append(canopyPop);
-  card.subtitle.forEach((introPop) => {
-    const introtextPop = document.createElement('p');
-    canopyPop.append(introtextPop);
-    introtextPop.textContent = introPop.stackName;
-  });
+  // const titlePop = document.createElement('h1');
+  // titlePop.classList.add('tonicPop');
+  // modal.append(titlePop);
+  // titlePop.innerText = card.title;
 
-  const stackItemPop = document.createElement('div');
-  stackItemPop.classList.add('details');
-  containerPop.append(stackItemPop);
-  card.subtitle.forEach((stackPop) => {
-    const seperatorPop = document.createElement('img');
-    stackItemPop.append(seperatorPop);
-    seperatorPop.src = '/Images/Counter.png';
-    seperatorPop.alt = 'img';
-    const stacktextPop = document.createElement('p');
-    stackItemPop.append(stacktextPop);
-    stacktextPop.textContent = stackPop.stack;
-  });
+  // const modalsubtext = document.createElement('div');
+  // modalsubtext.classList.add('modalsubtext');
+  // modal.append(modalsubtext);
 
-  const imgPop = document.createElement('img');
-  imgPop.classList.add('snapPop');
-  modal.append(imgPop);
-  imgPop.src = card.image;
-  imgPop.alt = 'img';
+  // const modalsubcanopy = document.createElement('div');
+  // modalsubcanopy.classList.add('modalsubcanopy');
+  // modalsubtext.append(modalsubcanopy);
 
-  const Lorem = document.createElement('p');
-  imgPop.classList.add('Lorem');
-  modal.append(Lorem);
-  Lorem.innerText = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent";
+  // const canopytext = document.createElement('p');
+  // canopytext.classList.add('canopytext');
+  // modalsubcanopy.append(canopytext);
+  // canopytext.innerText = 'CANOPY';
 
-//   const liveButton = document.createElement('button');
-//   modal.append(liveButton);
-//   liveButton.classList.add('button');
-//   const liveAnchor = document.createElement('a');
-//   liveButton.append(liveAnchor);
-//   liveAnchor.textContent = 'See Live';
+  // const modaldetails = document.createElement('div');
+  // modaldetails.classList.add('modaldetails');
+  // modalsubtext.append(modaldetails);
 
-//   const livecontent = document.createElement('button');
-//   modal.append(livecontent);
-//   livecontent.classList.add('button');
-//   const livecontentAnchor = document.createElement('a');
-//   livecontent.append(livecontentAnchor);
-//   livecontentAnchor.textContent = 'Live content';
+  // const backendtext = document.createElement('div');
+  // backendtext.classList.add('backendtext');
+  // modaldetails.append(backendtext);
+
+  // const backendp = document.createElement('div');
+  // backendtext.append(backendp);
+  // backendp.classList.add('backendp');
+
+  // const seperator = document.createElement('img');
+  // backendp.append(seperator);
+  // seperator.src = '/Images/Counter.png';
+  // seperator.alt = 'img';
+
+  // const p = document.createElement('p');
+  // backendp.append(p);
+  // backendp.classList.add('backendp');
+  // p.innerText = 'Backend';
+
+  // const seperato1 = document.createElement('img');
+  // backendp.append(seperato1);
+  // seperato1.classList.add('seperator');
+  // seperato1.src = '/Images/Counter.png';
+  // seperato1.alt = 'img';
+
+  // const p1 = document.createElement('p');
+  // backendp.append(p1);
+  // p1.classList.add('backendp-1');
+  // p1.innerText = '2015';
+
+  // const imgPop = document.createElement('img');
+  // imgPop.classList.add('snapPop');
+  // modal.append(imgPop);
+  // imgPop.src = card.image;
+  // imgPop.alt = 'img';
+
+  // const Lorem = document.createElement('p');
+  // imgPop.classList.add('Lorem');
+  // modal.append(Lorem);
+  // Lorem.innerText = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent";
+
+  // const modalButton = document.createElement('div');
+  // modalButton.classList.add('modalButton');
+  // modal.append(modalButton);
+
+  // const modalButton1 = document.createElement('button');
+  // modalButton1.classList.add('button');
+  // modalButton.append(modalButton1);
+
+  // const modalButton1a = document.createElement('a');
+  // modalButton1a.classList.add('a');
+  // modalButton1.append(modalButton1a);
+  // modalButton1a.innerText = 'See live';
+
+  // const modalButton1img = document.createElement('img');
+  // modalButton1img.classList.add('img');
+  // modalButton1a.append(modalButton1img);
+  // modalButton1img.src = 'See live';
+
+  // const modalButton2 = document.createElement('button');
+  // modalButton2.classList.add('button');
+  // modalButton.append(modalButton2);
+
+  // const modalButton2a = document.createElement('a');
+  // modalButton2a.classList.add('a');
+  // modalButton2.append(modalButton2a);
+  // modalButton2a.innerText = 'See live';
+
+  // const modalButton2img = document.createElement('img');
+  // modalButton2img.classList.add('img');
+  // modalButton2a.append(modalButton2img);
+  // modalButton2img.src = 'See live';
 });
-// Popup
-// cards.forEach((card) => {
-// }
-// const modal = document.getElementById('myModal');
-
-// // Get the button that opens the modal
-// const btn = document.getElementById('myBtn');
-
-// // Get the <span> element that closes the modal
-// const span = document.getElementsByClassName('close')[0];
-
-// // Get the <a> element that closes the modal when the links are clicked
-// const linkPortfolio = document.getElementsByClassName('link-x')[0];
-// const linkAbout = document.getElementsByClassName('link-1')[0];
-// const linkContact = document.getElementsByClassName('link-2')[0];
-
-// // When the user clicks the button, open the modal
-// btn.onclick = function btn() {
-//   modal.style.display = 'block';
-//   modal.style.backgroundColor = 'none';
-// };
-
-// // When the user clicks on <span> (x), close the modal
-// span.onclick = function span() {
-//   modal.style.display = 'none';
-// };
-
-// // When the user clicks on porfolio link, close the modal
-// linkPortfolio.onclick = function linkPortfolio() {
-//   modal.style.display = 'none';
-// };
-
-// // When the user clicks on about link, close the modal
-// linkAbout.onclick = function linkAbout() {
-//   modal.style.display = 'none';
-// };
-
-// // When the user clicks on contact link, close the modal
-// linkContact.onclick = function linkContact() {
-//   modal.style.display = 'none';
-// };
-
-// // When the user clicks anywhere outside of the modal, close it
-// window.onclick = function window(event) {
-//   if (event.target === modal) {
-//     modal.style.display = 'none';
-//   }
-// };
