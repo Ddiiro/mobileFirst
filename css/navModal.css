@@ -1,5 +1,5 @@
 /* The Modal (background) */
-.modal {
+.modal1 {
   display: none; /* Hidden by default */
   position: fixed; /* Stay in place */
   z-index: 1; /* Sit on top */
@@ -15,7 +15,7 @@
 }
 
 /* Modal Content */
-.modal-content {
+.modal-content1 {
   background-color: rgba(96, 112, 255); /* Fallback color */
   margin: auto;
   padding: 20px;
@@ -41,14 +41,14 @@
   cursor: pointer;
 }
 
-.modal-list {
+.modal-list1 {
   padding-top: 1rem;
   display: flex;
   flex-direction: column;
   gap: 2rem;
 }
 
-.modal-list li a {
+.modal-list1 li a {
   color: #fff;
   font-size: 32px;
   line-height: 44px;
@@ -57,14 +57,14 @@
 }
 
 @media only screen and (min-width: 768px) {
-  .modal {
+  .modal1 {
     display: none;
     background-color: transparent;
     mix-blend-mode: normal;
     backdrop-filter: unset;
   }
 
-  .modal-content {
+  .modal-content1 {
     display: none;
   }
 }
